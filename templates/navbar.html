@@ -3,16 +3,16 @@
     <ul class="navbar-left">
         <li>
             <a class="logo" href="{% url 'home' %}">
-                <img src="{%static 'VOICEIT_LOGO_transparent.png'%}"/>
+                AEM
             </a>
         </li>
         <li>
-            <a href="{% url 'petitions' %}">
+            <a href="">
                 Petitions
             </a>
         </li>
         <li>
-            <a href="{% url 'aboutUs' %}">
+            <a href="">
                 About Us
             </a>
         </li>
@@ -27,18 +27,18 @@
                 </li>
             {% endif %}
             <li>
-                <a href = "{% url 'profile' user.id %}">
-                    Welcome, {{ request.user.username }}
+                <a href = "">
+                    Welcome, 
                 </a>
             </li>
             <li>
-                <a href="{% url 'logout' %}">
+                <a href="">
                     Logout
                 </a>
             </li>
             {% else %}
             <li>
-                <a href="{% url 'login' %}">
+                <a href="">
                     Login/Register
                 </a>
             </li>
