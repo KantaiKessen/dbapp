@@ -1,0 +1,47 @@
+{%load static%}
+<div class="navbar">
+    <ul class="navbar-left">
+        <li>
+            <a class="logo" href="{% url 'home' %}">
+                <img src="{%static 'VOICEIT_LOGO_transparent.png'%}"/>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'petitions' %}">
+                Petitions
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'aboutUs' %}">
+                About Us
+            </a>
+        </li>
+    </ul>
+    <ul class="navbar-right">
+        {% if request.user.is_authenticated %}
+            {% if request.user.is_staff %}
+                <li>
+                    <a href="/admin">
+                        Admin Panel
+                    </a>
+                </li>
+            {% endif %}
+            <li>
+                <a href = "{% url 'profile' user.id %}">
+                    Welcome, {{ request.user.username }}
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'logout' %}">
+                    Logout
+                </a>
+            </li>
+            {% else %}
+            <li>
+                <a href="{% url 'login' %}">
+                    Login/Register
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</div>
