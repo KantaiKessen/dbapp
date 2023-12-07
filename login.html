@@ -1,10 +1,8 @@
-{% extends 'main.html'%}
-{% block content %}
+
 <!--Make it prettier-->
 <div class="logreg-center">
     <h1>Login</h1>
     <form method="POST" action="">
-        {% csrf_token %}
         <label>Username:</label>
         <input type="text" name="username" placeholder="Enter Username"/>
         <br>
@@ -16,8 +14,7 @@
     <p>
         Don't have an account? Register here!
     </p>
-    <a href="{%url 'register' %}">
+    <a href="./registeration.html">
         <button>Register</button>
     </a>
 </div>
-{%endblock content%}
