@@ -1,66 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="normalize.css"/>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>AEM Registration</title>
-        <meta name="viewport" content ='width=device-width, initial-scale=1'>
-    </head>
-    <body>
-        <div class="center">
-            <div class="navigation">
-                <ul>
-                    <li><a href="registration.html">User Registration</a></li>
-                    <li><a href="abstractreg.html">Abstract Registration</a></li>
-                    <li><a href="eventreg.html">Event Registration</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-        <h1>User Registration</h1>
-        <form action="insertreg.php" method="post">
-            <h3 style="color:red">*: required value</h3>
-            <ul>
-                <li>
-                    <label>Username*:</label>
-                    <input type="text" id="username" name="username" required maxlength="16"/>
-                </li>
-                <li>
-                    <label>First Name*:</label>
-                    <input type="text" id="firstname" name="firstname" required maxlength="16"/>
-                </li>
-                <li>
-                    <label>Last Name*:</label>
-                    <input type="text" id="lastname" name="lastname" required maxlength="32"/>
-                </li>
-                <li>
-                    <label>Phone 1*:</label>
-                    <input type="tel" id="phone1" name="phone1" required maxlength="32"/>
-                </li>
-                <li>
-                    <label>Phone 2:</label>
-                    <input type="tel" id="phone2" name="phone2" maxlength="32"/>
-                </li>
-                <li>
-                    <label>Email*:</label>
-                    <input type="email" id="email" name="email" maxlength="255"/>
-                </li>
-                <li>
-                    <label>Password*:</label>
-                    <input type="password" id="password" name="password" maxlength="255"/>
-                </li>
-                <li>
-                    <label>Confirm Password*:</label>
-                    <input type="password" id="confirmpassword" name="confirmpassword" maxlength="255"/>
-                </li>
-            </ul>
-            <input type="submit" value="Register">
-        </form>
-        </div>
-    </body>
-</html>
+<h1>User Registration</h1>
+<form action="insertreg.php" method="post">
+    <h3 style="color:red">*: required value</h3>
+    <ul>
+        <li>
+            <label>Username*:</label>
+            <input type="text" id="username" name="username" required maxlength="16"/>
+        </li>
+        <li>
+            <label>First Name*:</label>
+            <input type="text" id="firstname" name="firstname" required maxlength="16"/>
+        </li>
+        <li>
+            <label>Last Name*:</label>
+            <input type="text" id="lastname" name="lastname" required maxlength="32"/>
+        </li>
+        <li>
+            <label>Phone 1*:</label>
+            <input type="tel" id="phone1" name="phone1" required maxlength="32"/>
+        </li>
+        <li>
+            <label>Phone 2:</label>
+            <input type="tel" id="phone2" name="phone2" maxlength="32"/>
+        </li>
+        <li>
+            <label>Email*:</label>
+            <input type="email" id="email" name="email" maxlength="255"/>
+        </li>
+        <li>
+            <label>Password*:</label>
+            <input type="password" id="password" name="password" maxlength="255"/>
+        </li>
+        <li>
+            <label>Confirm Password*:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" maxlength="255"/>
+        </li>
+    </ul>
+    <input type="submit" value="Register">
+</form>
